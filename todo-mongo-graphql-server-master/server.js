@@ -1,9 +1,9 @@
 var express = require('express')
 var Schema = require('./schema')
-const { graphqlHTTP }  = require('express-graphql')
+const  graphqlHTTP  = require('express-graphql')
 
 var app = express()
-app.use('/', graphqlHTTP.graphqlHTTP({
+app.use('/', graphqlHTTP({
   schema: Schema,
   pretty: true,
   graphiql: true
