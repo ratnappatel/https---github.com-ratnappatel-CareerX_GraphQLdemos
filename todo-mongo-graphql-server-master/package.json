@@ -12,7 +12,7 @@
     "express": "^4.13.3",
     "express-graphql": "^0.4.13",
     "graphql": "^0.4.12",
-    "mongoose": "^4.2.5"
+    "mongoose": "^6.7.2"
   },
   "standard": {
     "ignore": [

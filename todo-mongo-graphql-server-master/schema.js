@@ -16,21 +16,13 @@ var TODO = mongoose.model('Todo', new Schema({
   completed: Boolean
 }))
 
-/*
- * I’m sharing my credentials here.
- * Feel free to use it while you’re learning.
- * After that, create and use your own credential.
- * Thanks.
- *
- * to connect to a local instance of MongoDB use
- * COMPOSE_URI=mongodb://example:example@127.0.0.1:27017/todo
- */
-var COMPOSE_URI_DEFAULT = 'mongodb://127.0.0.1:27017/todo'
+
+var COMPOSE_URI_DEFAULT = 'mongodb://localhost:27017/todo'
 mongoose.connect(COMPOSE_URI_DEFAULT, function (error) {
   if (error) console.error(error)
   else console.log('mongo connected')
 })
-/** END */
+
 
 var TodoType = new GraphQLObjectType({
   name: 'todo',
